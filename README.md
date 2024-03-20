@@ -11,18 +11,14 @@ Antes de começar, você precisa ter o Python instalado em seu sistema. Esta apl
 ## Configuração do Ambiente
 
 Recomenda-se a utilização de um ambiente virtual Python para evitar conflitos de dependências. Para criar e ativar um ambiente virtual, execute:
-
-### Para Windows
-
+```
+## Para Windows
 ```bash
-
 python -m venv venv
 .\venv\Scripts\activate
-
 ```
 
-### Para Linux ou macOS
-
+## Para Linux ou macOS
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -95,7 +91,7 @@ pytest
 ```
 
 Os resultados dos testes serão exibidos no terminal, indicando quais testes passaram e quais falharam.
-```
+
 
 Esse guia no `README.md` oferece uma visão geral de como preparar o ambiente, executar a aplicação Flask e utilizar a API, além de como executar os testes para garantir que tudo esteja funcionando conforme esperado. Certifique-se de adaptar as instruções conforme necessário para refletir as especificidades do seu projeto.
 
