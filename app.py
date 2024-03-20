@@ -54,7 +54,7 @@ def update_post(post_id):
     # Se não, retorna uma mensagem de erro como JSON com status HTTP 404 (Not Found)
     else:
         return jsonify({'message': 'Post not found'}), 404
-
+'''
 # Define um endpoint DELETE para '/api/posts/<int:post_id>' que deleta um post específico pelo seu ID
 @app.route('/api/posts/<int:post_id>', methods=['DELETE'])
 def delete_post(post_id):
@@ -64,6 +64,18 @@ def delete_post(post_id):
     posts = [post for post in posts if post['id'] != post_id]
     # Retorna uma mensagem de sucesso como JSON com status HTTP 204 (No Content)
     return jsonify({'message': 'Post deleted'}), 204
+'''
+
+@app.route('/api/posts/<int:post_id>', methods=['DELETE'])
+def delete_post(post_id):
+    global posts  # Garante que estamos modificando a variável global
+    post = next((post for post in posts if post['id'] == post_id), None)
+    if post:
+        posts = [post for post in posts if post['id'] != post_id]  # Filtra fora o post deletado
+        return jsonify({'message': 'Post deleted'}), 204
+    else:
+        return jsonify({'error': 'Post not found'}), 404
+
 
 # Verifica se o arquivo é o módulo principal e executa o aplicativo Flask
 if __name__ == '__main__':
