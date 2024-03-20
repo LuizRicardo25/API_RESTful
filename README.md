@@ -15,6 +15,7 @@ Recomenda-se a utilização de um ambiente virtual Python para evitar conflitos 
 ### Para Windows
 
 ```bash
+
 python -m venv venv
 .\venv\Scripts\activate
 
