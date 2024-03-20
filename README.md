@@ -17,6 +17,7 @@ Recomenda-se a utilização de um ambiente virtual Python para evitar conflitos 
 ```bash
 python -m venv venv
 .\venv\Scripts\activate
+
 ```
 
 ### Para Linux ou macOS
