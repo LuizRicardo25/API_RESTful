@@ -1,5 +1,5 @@
 
-```markdown
+
 # Minha Aplicação Flask
 
 Este repositório contém uma aplicação Flask simples que gerencia posts através de uma API RESTful. Aqui estão as instruções para configurar, executar a aplicação e realizar testes.
@@ -11,7 +11,7 @@ Antes de começar, você precisa ter o Python instalado em seu sistema. Esta apl
 ## Configuração do Ambiente
 
 Recomenda-se a utilização de um ambiente virtual Python para evitar conflitos de dependências. Para criar e ativar um ambiente virtual, execute:
-```
+
 ## Para Windows
 ```bash
 python -m venv venv
